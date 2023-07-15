@@ -5,9 +5,9 @@
 
 A [hapi.js](https://github.com/hapijs/hapi) plugin to connect with [Sequelize ORM](https://github.com/sequelize/sequelize/).
 
-## Support me
+## Support the author
 
-If you like this plugin, please support my work and help maintaining it.
+If you like this plugin, please support the author and help maintaining it.
 
 <a href="https://www.buymeacoffee.com/valtlfelipe" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" width="200"></a>
 
@@ -47,6 +47,7 @@ server.register([
                 ignoredModels: [__dirname + '/server/models/**/*.js'], // OPTIONAL: paths/globs to ignore files
                 sequelize: new Sequelize(config, opts), // sequelize instance
                 sync: true, // sync models - default false
+                alter: true, // sync models allow alter table- default false
                 forceSync: false, // force sync (drops tables) - default false
             },
         ],
