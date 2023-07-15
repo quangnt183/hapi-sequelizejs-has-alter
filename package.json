@@ -1,5 +1,5 @@
 {
-    "name": "hapi-sequelizejs",
+    "name": "hapi-sequelizejs-opt",
     "version": "0.0.0-development",
     "description": "hapi.js plugin for the Sequelize ORM",
     "main": "lib/index.js",
